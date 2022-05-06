@@ -1,3 +1,6 @@
+/* Write GOOD comments so that next developer ( killer psycopath who knows where you stay ) ... */
+/* .... who is going to maintain this code; need NOT have to get back to you */
+
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 /* CSS Universal Selector */
@@ -23,6 +26,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("images/pattern-background-desktop.svg") no-repeat center
+    center fixed;
+  background-size: cover;
   /* debugging purpose only */
   border: 3px dotted red;
 }
@@ -34,15 +40,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.5em;
   /* debugging purpose only */
-  border: 3px dotted green;
+  /* border: 3px dotted green; */
 }
 
 .flexbox-item {
   width: 90%;
-  margin: 1em auto 1em auto;
+  margin: 0.5em auto 0.5em auto;
   /* debugging purpose only */
-  border: 1px dotted blue;
+  /* border: 1px dotted blue; */
 }
 
 /* style 1st block */
@@ -57,6 +66,8 @@ body {
 
 .flexbox-image-container img {
   width: 100%;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
 }
 
 /* style 2nd block */
@@ -67,20 +78,64 @@ body {
   align-items: center;
 }
 
+.flexbox-info-container h1 {
+  margin-bottom: 1em;
+}
+
+.flexbox-info-container p {
+  text-align: center;
+  line-height: 1.4em;
+  font-size: 0.8em;
+}
+
 /* style 3rd block */
 .flexbox-plan-details-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  background-color: aliceblue;
+}
+
+.flexbox-plan-details-container section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* logic to reduce space between 2 flex items */
+  /* made use of both FF and Chrome dev tool to do trial & error; and achieve desired results */
+  width: 9.375em;
+  align-items: flex-start;
+  font-size: 0.85em;
+  height: 100%;
+}
+
+.flexbox-plan-details-container section:nth-child(2) p:nth-child(1) {
+  font-weight: bold;
+  margin-bottom: 0.7em;
+}
+
+.flexbox-plan-details-container section:nth-child(3) {
+  font-size: 0.75em;
 }
 
 /* style 4th block */
 .flexbox-buttons-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  height: 6em;
+}
+
+.flexbox-buttons-container button {
+  width: 100%;
+  padding: 1em;
+}
+
+.flexbox-buttons-container p {
+  font-size: 0.75em;
 }
 /* .attribution {
   font-size: 11px;
