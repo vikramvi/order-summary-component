@@ -1,8 +1,92 @@
-.attribution {
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* CSS Universal Selector */
+/* Selects all elements on the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Selects the root element of the document <html> in the case of HTML */
+:root {
+  --bg-color: hsl(212, 45%, 89%);
+  --card-bg-color: hsl(0, 0%, 100%);
+  --card-title-color: hsl(218, 44%, 22%);
+  --card-content-color: hsl(220, 15%, 55%);
+}
+
+body {
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--color-main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* debugging purpose only */
+  border: 3px dotted red;
+}
+
+.card-container {
+  width: 20em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* debugging purpose only */
+  border: 3px dotted green;
+}
+
+.flexbox-item {
+  width: 90%;
+  margin: 1em auto 1em auto;
+  /* debugging purpose only */
+  border: 1px dotted blue;
+}
+
+/* style 1st block */
+.flexbox-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+.flexbox-image-container img {
+  width: 100%;
+}
+
+/* style 2nd block */
+.flexbox-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style 3rd block */
+.flexbox-plan-details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style 4th block */
+.flexbox-buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .attribution {
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
