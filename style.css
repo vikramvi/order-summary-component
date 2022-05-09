@@ -30,7 +30,7 @@ body {
     center fixed;
   background-size: cover;
   /* debugging purpose only */
-  border: 3px dotted red;
+  /* border: 3px dotted red; */
 }
 
 .card-container {
@@ -76,6 +76,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2em;
 }
 
 .flexbox-info-container h1 {
@@ -94,9 +95,21 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 0.5em;
   background-color: aliceblue;
+  padding: 1.5em;
+}
+
+.flexbox-plan-details-container section:nth-child(1) {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-plan-details-container section:nth-child(1) img {
+  width: 70%;
 }
 
 .flexbox-plan-details-container section:nth-child(2) {
@@ -126,16 +139,22 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 6em;
+  height: 7em;
 }
 
 .flexbox-buttons-container button {
   width: 100%;
   padding: 1em;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border-radius: 0.5em;
+  margin-top: 1em;
 }
 
 .flexbox-buttons-container p {
   font-size: 0.75em;
+  margin-top: 2em;
+  margin-bottom: 3em;
 }
 /* .attribution {
   font-size: 11px;
@@ -145,3 +164,10 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 } */
+
+@media (max-width: 420px) {
+  .card-container {
+    width: 22.5em;
+    margin: auto;
+  }
+}
