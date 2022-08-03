@@ -103,15 +103,15 @@ body {
   padding: 1.5em;
 }
 
-.flexbox-plan-details-container section:nth-child(1) {
+.flexbox-plan-details-container figure {
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flexbox-plan-details-container section:nth-child(1) img {
-  width: 70%;
+.flexbox-plan-details-container figure img {
+  width: 80%;
 }
 
 .flexbox-plan-details-container section:nth-child(2) {
@@ -122,16 +122,12 @@ body {
   /* made use of both FF and Chrome dev tool to do trial & error; and achieve desired results */
   width: 9.375em;
   align-items: flex-start;
-  font-size: 0.85em;
+  font-size: 0.65em;
   height: 100%;
+  gap: 7px;
 }
 
-.flexbox-plan-details-container section:nth-child(2) p:nth-child(1) {
-  font-weight: bold;
-  margin-bottom: 0.7em;
-}
-
-.flexbox-plan-details-container section:nth-child(3) {
+.flexbox-plan-details-container div {
   font-size: 0.75em;
 }
 
