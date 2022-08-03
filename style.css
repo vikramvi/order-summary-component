@@ -36,7 +36,7 @@ body {
 }
 
 .card-container {
-  width: 20em;
+  width: 22em;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -86,6 +86,8 @@ body {
 }
 
 .flexbox-info-container p {
+  width: 80%;
+
   text-align: center;
   line-height: 1.4em;
   font-size: 0.8em;
